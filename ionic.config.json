@@ -1,0 +1,7 @@
+{
+  "name": "techc_student_app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
