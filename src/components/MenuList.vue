@@ -1,7 +1,7 @@
 <template>
   <div class="grid grid-cols-2 gap-4">
     <div class="relative pb-full">
-      <div class="absolute w-full h-full bg-white bg-opacity-25 rounded-2xl p-4">
+      <div class="absolute w-full h-full bg-gray-100 rounded-2xl p-4 border dark:bg-black dark:text-gray-300 dark:border-gray-800 bg-opacity-75">
         <div class="flex items-center justify-between">
           <h2>合計</h2>
           <p class="text-xs">出席率</p>
@@ -18,7 +18,7 @@
       </div>
     </div>
     <div class="relative pb-full">
-      <div class="absolute w-full h-full bg-white bg-opacity-25 rounded-2xl p-4">
+      <div class="absolute w-full h-full bg-gray-100 rounded-2xl p-4 border dark:bg-black dark:text-gray-300 dark:border-gray-800 bg-opacity-75">
         <div class="flex items-center justify-between">
           <h2>月間</h2>
           <p class="text-xs">出席率</p>
@@ -34,13 +34,13 @@
         </div>
       </div>
     </div>
-    <div class="bg-white bg-opacity-25 rounded-2xl p-4">
+    <div class="bg-gray-100 rounded-2xl p-4 border dark:bg-black dark:text-gray-300 dark:border-gray-800 bg-opacity-75">
       <div class="flex items-center justify-between">
         <h2>公欠届</h2>
         <p class="text-xs">外部サイト</p>
       </div>
     </div>
-    <div class="bg-white bg-opacity-25 rounded-2xl p-4">
+    <div class="bg-gray-100 rounded-2xl p-4 border dark:bg-black dark:text-gray-300 dark:border-gray-800 bg-opacity-75">
       <div class="flex items-center justify-between">
         <h2>欠席連絡</h2>
         <p class="text-xs">外部サイト</p>
