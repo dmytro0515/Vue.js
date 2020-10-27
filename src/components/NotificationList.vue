@@ -7,7 +7,7 @@
     <ion-item v-for="(item, n) in notifications" :key="n">
       <ion-label class="py-2">
         <h2>{{ item.title }}</h2>
-        <p>{{ item.content }}</p>
+        <p class="dark:text-gray-500">{{ item.content }}</p>
       </ion-label>
     </ion-item>
   </ion-list>
