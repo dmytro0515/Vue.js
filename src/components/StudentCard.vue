@@ -33,10 +33,11 @@
 </template>
 
 <script lang="ts">
+import { defineComponent } from 'vue'
 import { ref } from 'vue'
-export default {
+export default defineComponent({
   setup() {
-    const titles = ref(['学籍番号', '氏名', '学科', '生年月日'])
+    const titles = ref<string[]>(['学籍番号', '氏名', '学科', '生年月日'])
     const data = {
       id: '20C1010000',
       name: 'TECH.C.',
@@ -44,14 +45,14 @@ export default {
       birthday: 'YYYY/MM/DD'
     }
 
-    const studentInfo = ref(Object.values(data))
+    const studentInfo = ref<string[]>(Object.values(data))
 
     return{
       titles,
       studentInfo
     }
   }
-}
+})
 </script>
 
 <style>

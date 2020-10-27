@@ -6,9 +6,10 @@
 </template>
 
 <script lang="ts">
+import { defineComponent } from 'vue'
 import StudentCard from './StudentCard.vue'
 import NotificationList from './NotificationList.vue'
-export default {
+export default defineComponent({
   name: 'ExploreContainer',
   props: {
     name: String
@@ -17,5 +18,5 @@ export default {
     StudentCard,
     NotificationList
   }
-}
+})
 </script>

@@ -13,14 +13,21 @@
   </ion-list>
 </template>
 
-<script>
+<script lang="ts">
+import { defineComponent } from 'vue'
 import { ref } from 'vue';
 import { IonList, IonItem, IonLabel, IonListHeader } from '@ionic/vue';
-export default {
+
+interface Book {
+  title: string;
+  content: string;
+}
+
+export default defineComponent({
   name: 'NotificationList',
   components: { IonList, IonItem, IonLabel, IonListHeader },
   setup() {
-    const notifications = ref([
+    const notifications = ref<Book[]>([
       {
         title: 'Matched Geometry Effect',
         content: 'Learn how to quickly transition different views'
@@ -43,7 +50,7 @@ export default {
       notifications
     }
   }
-}
+})
 </script>
 
 <style>
