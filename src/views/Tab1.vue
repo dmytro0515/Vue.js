@@ -1,29 +1,21 @@
 <template>
-  <ion-page>
-    <ion-header>
-      <ion-toolbar>
-        <ion-title>ホーム</ion-title>
-      </ion-toolbar>
-    </ion-header>
-    <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">ホーム</ion-title>
-          
-        </ion-toolbar>
-      </ion-header>
-    
-      <ExploreContainer name="Tab 1 page" />
-    </ion-content>
-  </ion-page>
+  <PageWrapper name="ホーム">
+    <StudentCard></StudentCard>
+    <NotificationList></NotificationList>
+  </PageWrapper>
 </template>
 
 <script lang="ts">
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
-import ExploreContainer from '@/components/ExploreContainer.vue';
+import PageWrapper from '@/components/PageWrapper.vue';
+import StudentCard from '@/components/StudentCard.vue'
+import NotificationList from '@/components/NotificationList.vue'
 
 export default  {
   name: 'Tab1',
-  components: { ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
+  components: {
+    PageWrapper,
+    StudentCard,
+    NotificationList,
+  }
 }
 </script>
