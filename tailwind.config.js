@@ -8,7 +8,9 @@ module.exports = {
   theme: {
     extend: {
       padding: {
-        '5/7': '71%'
+        '5/7': '71%',
+        'full': '100%',
+        'book': '120%'
       }
     },
   },
