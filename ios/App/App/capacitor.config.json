@@ -1,5 +1,5 @@
 {
-  "appId": "io.ionic.starter",
+  "appId": "co.hanlee.student-app",
   "appName": "techc_student_app",
   "bundledWebRuntime": false,
   "npmClient": "npm",
@@ -9,5 +9,9 @@
       "launchShowDuration": 0
     }
   },
-  "cordova": {}
+  "cordova": {},
+  "server": {
+    "url": "http://192.168.21.8:8100",
+    "cleartext": true
+  }
 }
