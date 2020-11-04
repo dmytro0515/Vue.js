@@ -4,6 +4,7 @@
   "private": true,
   "description": "An Ionic project",
   "scripts": {
+    "ios": "ionic capacitor run ios -l --external",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
